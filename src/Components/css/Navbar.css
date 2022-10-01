@@ -3,6 +3,12 @@ nav{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 75px;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 nav>a{
     margin: auto 50px;
@@ -25,7 +31,6 @@ nav>ul{
 nav>ul>li>a{
     text-decoration: none;
     font-size: 18px;
-    font-weight: 600;
     transform-origin: bottom right;
     transform: scaleX(0);
     transition: 0.5s ease;

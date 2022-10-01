@@ -1,0 +1,78 @@
+#Home{
+    width: 1180px;
+    background-color: rgb(233, 221, 221);
+    margin: auto;
+    padding: 0px 20px;
+}
+.title{
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.homeContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@keyframes leftToRight {
+    0%{transform: translateX(-50px); opacity: 0;}
+    100%{transform: translateX(0px); opacity: 1;}
+}
+.homeContainer .left{
+    width: 45%;
+    animation: leftToRight;
+    animation-duration: 1.5s;
+}
+.homeContainer .left h1{
+    font-family:'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.left .talk{
+    font-family:'Poppins', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.homeContainer .right{
+    width: 40%;
+}
+@keyframes rotateLeft {
+    0%{transform: rotate(0deg); margin-left: 0px;}
+    100%{transform: rotate(-15deg); margin-left: -100px;}
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.right .cardOne{
+    position:absolute;
+    height: 440px;
+    width: 300px;
+    margin-left: -100px;
+    border-radius: 10px;
+    animation-name: rotateLeft;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    transform: rotate(-15deg);
+}
+@keyframes rotateRight {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(7deg);}
+}
+.right .cardTwo{
+    position:absolute;
+    height: 500px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    animation-name: rotateRight;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    transform: rotate(7deg);
+    background-color: black;
+}
