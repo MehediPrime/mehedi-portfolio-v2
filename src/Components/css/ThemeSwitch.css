@@ -1,0 +1,51 @@
+.setting{
+    position: fixed;
+    right: -100px;
+    top: 20%;
+    padding: 10px;
+    border-radius: 0px 10px 10px 10px;
+}
+.settingBtn{
+    cursor: pointer;
+    font-size: 35px;
+    position: fixed;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    border: none;
+    background-color: transparent;
+    animation: rotate 3s infinite linear;
+}
+.themeChangeBtn{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    padding: 6px;
+    border-radius: 100%;
+    font-size: 35px;
+    transition: 0.7s;
+}
+.colorChange{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+.colorChangeBtn{
+    cursor: pointer;
+    background-color: transparent;
+    right: 60px;
+    border: none;
+    font-size: 20px;
+    transition: 0.7s;
+}
+
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.themeChangeBtn:hover{
+    animation: rotate 2s infinite linear;
+}

@@ -1,0 +1,35 @@
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 75px;
+}
+nav>a{
+    margin: auto 50px;
+    font-family: 'Bebas Neue', cursive; 
+    /* font-family:'Poppins', sans-serif;  */
+    /* font-family:'Roboto', sans-serif;  */
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    width: fit-content;
+    padding: 0px 7px;
+    border-radius: 5%;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: 0.5s ease;
+}
+nav>ul>li>a:hover{
+    transform: scaleX(1);
+}
