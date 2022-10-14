@@ -22,8 +22,8 @@ function App() {
       />
       <Navbar colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
       <Home colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
-      <Portfolio colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
       <Skill colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
+      <Portfolio colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
       <Education colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
       <Contact colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
     </div>

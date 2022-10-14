@@ -3,3 +3,10 @@
   font-family: 'Mulish', sans-serif;
   scroll-behavior: smooth;
 }
+.title{
+  font-family:'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}

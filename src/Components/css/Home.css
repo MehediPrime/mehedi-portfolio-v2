@@ -1,14 +1,7 @@
 #Home{
     width: 1180px;
-    background-color: rgb(233, 221, 221);
     margin: auto;
     padding: 0px 20px;
-}
-.title{
-    font-family:'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 16px;
 }
 .homeContainer{
     height: 100vh;

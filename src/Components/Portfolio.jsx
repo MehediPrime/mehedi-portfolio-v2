@@ -1,9 +1,17 @@
 import React from "react";
-import './css/Portfolio.css';
 
-export default function Portfolio () {
+export default function Portfolio ({colorBG, colorText, colorDynamic}) {
+
+    const initStyle = {
+        backgoundColor: colorBG,
+        color: colorText,
+        margin: 'auto',
+        padding: '75px 20px',
+        border: `1px solid ${colorDynamic}`
+    }
+
     return(
-        <div id="Portfolio">
+        <div id="Portfolio" style={initStyle}>
             <h1>Portfolio</h1>
         </div>
     )
