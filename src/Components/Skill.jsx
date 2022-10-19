@@ -15,46 +15,46 @@ export default function Skill ({colorBG, colorText, colorDynamic}) {
 
     return(
         <div id="Skill" style={initStyle}>
-            <span className="title" style={{color:colorDynamic}}>Skills</span>
-            <h1>I am good at</h1>
+            <h1 className="title" style={{color:colorDynamic}}>Skills</h1>
+            <h2>I am good at</h2>
             <div className="skillCards">
                 <div className="skillCard">
-                    <h2>JavaScript</h2>
+                    <h3>JavaScript</h3>
                     <p style={{color:"#ead41c"}}><SiJavascript/></p>
                 </div>
                 <div className="skillCard">
-                    <h2>React</h2>
+                    <h3>React</h3>
                     <p style={{color:"#61dafb"}}><SiReact/></p>
                 </div>
                 <div className="skillCard">
-                    <h2>Node.js</h2>
+                    <h3>Node.js</h3>
                     <p style={{color:"#3e863d"}}><SiNodedotjs/></p>
                 </div>
                 <div className="skillCard">
-                    <h2>HTML</h2>
+                    <h3>HTML</h3>
                     <p style={{color:"#dd4b25"}}><SiHtml5/></p>
                 </div>
                 <div className="skillCard">
-                    <h2>CSS</h2>
+                    <h3>CSS</h3>
                     <p style={{color:"#254bdd"}}><SiCss3/></p>
                 </div>
                 <div className="skillCard">
-                    <h2>Github</h2>
+                    <h3>Github</h3>
                     <p style={{color:"#790079"}}><SiGithub/></p>
                 </div>
             </div>
-            <h1>Basic knowledge</h1>
+            <h2>Basic knowledge</h2>
             <div className="skillCards">
                 <div className="skillCard">
-                    <h2>MongoDB</h2>
+                    <h3>MongoDB</h3>
                     <p style={{color:"#0fa14c"}}><SiMongodb/></p>
                 </div>
                 <div className="skillCard">
-                    <h2>Java</h2>
+                    <h3>Java</h3>
                     <p style={{color:"#fe0000"}}><SiJava/></p>
                 </div>
                 <div className="skillCard">
-                    <h2>Python</h2>
+                    <h3>Python</h3>
                     <p style={{color:"#30699b"}}><SiPython/></p>
                 </div>
             </div>

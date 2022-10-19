@@ -10,3 +10,7 @@
   margin-bottom: 16px;
   text-transform: uppercase;
 }
+#About, #Education, #Home, #Portfolio, #Skill, #Contact{
+  width: 1180px;
+  margin: auto;
+}

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
+import About from './Components/About';
 import Portfolio from './Components/Portfolio';
 import Skill from './Components/Skill';
 import Education from './Components/Education';
@@ -22,6 +23,7 @@ function App() {
       />
       <Navbar colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
       <Home colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
+      <About colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
       <Skill colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
       <Portfolio colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>
       <Education colorBG={colorBG} colorText={colorText} colorDynamic={colorDynamic}/>

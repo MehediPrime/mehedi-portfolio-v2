@@ -22,10 +22,13 @@ export default function Home ({colorBG, colorText, colorDynamic}) {
         <div id="Home" style={style}>
             <div className="homeContainer">
                 <div className="left">
-                    <span className="title" style={{color:colorDynamic}}>S M Mehedi</span>
-                    <h1>Front-end web developer in Bangladesh</h1>
+                    <h1 className="title" style={{color:colorDynamic}}>S M Mehedi</h1>
+                    <h2>Front-end web developer in Bangladesh</h2>
                     <a href="#Contact" style={{color:colorText}} className="talk"  onMouseOver={hover} onMouseOut={hoverNot}>
                         <BsArrowReturnRight style={{verticalAlign:"middle"}}/> &nbsp; Let's talk
+                    </a><br />
+                    <a href="#About" style={{color:colorText}} className="talk"  onMouseOver={hover} onMouseOut={hoverNot}>
+                        <BsArrowReturnRight style={{verticalAlign:"middle"}}/> &nbsp; Explore me !
                     </a>
                 </div>
                 <div className="right">

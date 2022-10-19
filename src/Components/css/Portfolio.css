@@ -1,0 +1,36 @@
+#Portfolio h2{
+    margin-top: 30px;
+    font-family:'Poppins', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.workCards{
+    margin-top: 20px;
+}
+
+.workCard{
+    padding: 30px 0px;
+    height: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+}
+.workCard img{
+    width:85%;
+    height:200px; /* Delete when put actual picture */
+    border: 1px solid;
+}
+.workCard h2{
+    font-size: 20px;
+}
+.workCard a{
+    text-decoration: none;
+    font-size: 18px;
+}

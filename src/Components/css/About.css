@@ -1,0 +1,64 @@
+
+.aboutContainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.leftPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftPart .leftPicture{
+    height: 250px;
+    width: 250px;
+    background-color: gray;
+    border-radius: 7px;
+
+}
+.rightPart h1{
+    margin-bottom: 20px;
+}
+.rightPart{
+    font-size: 18px;
+    text-align: justify;
+}
+.rightPart .aboutContact{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.rightPart .aboutButton{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 53px;
+}
+.aboutButton a{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.aboutButton a:hover{
+    font-size: 20px;
+    transition: 0.3s;
+}
+.aboutButton button{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.aboutButton button:hover{
+    font-size: 20px;
+    transition: 0.3s;
+}
