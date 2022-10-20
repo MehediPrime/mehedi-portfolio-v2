@@ -6,8 +6,8 @@ export default function Education ({colorBG, colorText, colorDynamic}) {
     const initStyle = {
         backgoundColor: colorBG,
         color: colorText,
-        margin: 'auto',
-        padding: '75px 20px',
+        margin: '40px auto',
+        paddingTop: '75px'
     }
 
     return(

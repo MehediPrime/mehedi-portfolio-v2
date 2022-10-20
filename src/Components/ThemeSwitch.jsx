@@ -23,7 +23,8 @@ export default function ThemeSwitch ({colorBG, setColorBG, colorText, setColorTe
         backgroundColor: "transparent",
         border: "1px solid "+colorText,
         right: "0px",
-        transition: "0.5s"
+        transition: "0.5s",
+        backgroundColor:colorBG
     }
     const styleTwo = {
         color: colorText,
@@ -33,7 +34,8 @@ export default function ThemeSwitch ({colorBG, setColorBG, colorText, setColorTe
         right: "71px",
         animation: "none",
         fontSize: "30px",
-        transition: "0.5s"
+        transition: "0.5s",
+        backgroundColor:colorBG
     }
 
     const styleNone = {

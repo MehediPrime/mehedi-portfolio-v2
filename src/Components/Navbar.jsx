@@ -1,5 +1,6 @@
 import React from "react";
 import './css/Navbar.css';
+import { BiMenu } from "react-icons/bi";
 
 export default function Navbar ({colorBG, colorText, colorDynamic}) {
 
@@ -18,7 +19,9 @@ export default function Navbar ({colorBG, colorText, colorDynamic}) {
     return(
         <nav style={style}>
             <a href="#Home" style={{color:colorText}}>Mehedi</a>
-            <ul >
+            <input type="checkbox" id="check" />
+            <label htmlFor="check" id="checkIcon"><BiMenu/></label>
+            <ul className="menuList" style={{backgroundColor:colorBG}}>
                 <li><a href="#Home" onMouseOver={hover} onMouseOut={hoverNot} style={{color:colorText}}>Home</a></li>
                 <li><a href="#About" onMouseOver={hover} onMouseOut={hoverNot} style={{color:colorText}}>About</a></li>
                 <li><a href="#Skill" onMouseOver={hover} onMouseOut={hoverNot} style={{color:colorText}}>Skills</a></li>

@@ -1,4 +1,3 @@
-
 .aboutContainer{
     margin-top: 20px;
     display: grid;
@@ -61,4 +60,14 @@
 .aboutButton button:hover{
     font-size: 20px;
     transition: 0.3s;
+}
+
+@media screen and (max-width:850px) {
+    .aboutContainer{
+        grid-template-columns: 1fr;
+    }
+    .leftPart .leftPicture{
+        height: 100px;
+        width: 100px;
+    }
 }

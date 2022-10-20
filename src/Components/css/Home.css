@@ -64,3 +64,12 @@
     transform: rotate(7deg);
     background-color: black;
 }
+
+@media screen and (max-width:850px) {
+    .homeContainer{
+        justify-content: center;
+    }
+    .homeContainer>.right{
+        display: none;
+    }
+}

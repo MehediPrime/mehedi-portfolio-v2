@@ -13,10 +13,15 @@ import "swiper/css/navigation";
 export default function Portfolio ({colorBG, colorText, colorDynamic}) {
 
     const [mediumWidth, setMediumWidth] = useState(false);
-    let mediaQueryTab = window.matchMedia("(max-width:  1180px)");
+    const [smallWidth, setSmallWidth] = useState(false);
+    let mediaQueryTab = window.matchMedia("(max-width:  1000px)");
+    let mediaQueryMobile = window.matchMedia("(max-width:  650px)");
 
     mediaQueryTab.addEventListener('change', ()=>{
         mediaQueryTab.matches ? setMediumWidth(true) : setMediumWidth(false)
+    });
+    mediaQueryMobile.addEventListener('change', ()=>{
+        mediaQueryMobile.matches ? setSmallWidth(true) : setSmallWidth(false)
     });
     const workList = [
         {
@@ -48,9 +53,8 @@ export default function Portfolio ({colorBG, colorText, colorDynamic}) {
     const initStyle = {
         backgoundColor: colorBG,
         color: colorText,
-        margin: 'auto',
-        padding: '75px 20px',
-        //border: `1px solid ${colorDynamic}`
+        margin: '40px auto',
+        paddingTop: '75px'
     }
 
     return(
@@ -60,7 +64,7 @@ export default function Portfolio ({colorBG, colorText, colorDynamic}) {
             <div >
             <Swiper 
                 centeredSlides={true}
-                slidesPerView={mediumWidth ? 1 : 3}
+                slidesPerView={mediumWidth ? (smallWidth ? 1 : 2) : 3}
                 spaceBetween={30}
                 slidesPerGroup={1}
                 loop={true}
@@ -69,10 +73,10 @@ export default function Portfolio ({colorBG, colorText, colorDynamic}) {
                     clickable: true
                 }}
                 navigation={true}
-                // autoplay={{
-                //     delay: 1500,
-                //     disableOnInteraction: true,
-                //   }}
+                autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: true,
+                  }}
                 className="workCards"
             >
 {

@@ -3,12 +3,12 @@ nav{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 75px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top:0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 2;
 }
 nav>a{
     margin: auto 50px;
@@ -22,7 +22,9 @@ nav>a{
     padding: 0px 7px;
     border-radius: 5%;
 }
-
+#check, #checkIcon{
+    display: none;
+}
 nav>ul{
     display: flex;
     justify-content: space-around;
@@ -39,4 +41,41 @@ nav>ul>li>a{
 
 nav>ul>li>a:hover{
     transform: scaleX(1);
+}
+
+@media screen and (max-width:1200px) {
+    #checkIcon{
+        display: flex;
+        justify-content: end;
+        font-size: 50px;
+        margin-right: 40px;
+    }
+    .menuList{
+        position: fixed;
+        height: 100%;
+        width: 40%;
+        top: 75px;
+        right: -800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-left: 1px solid;
+        transition: 0.5s ease-in-out;
+    }
+    .menuList>li{
+        margin-top: 50px;
+    }
+    #check:checked ~ .menuList{
+        right: -80px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    nav>a{
+        margin: 10px;
+    }
+    #checkIcon{
+        justify-content:flex-end;
+        font-size: 50px;
+    }
 }

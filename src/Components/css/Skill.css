@@ -32,3 +32,10 @@
 .skillCard :first-child{
     margin-bottom: 20px;
 }
+
+@media screen and (max-width:850px) {
+    .skillCard{
+        width: 80px;
+        height: 130px;
+    }
+}

@@ -7,8 +7,8 @@ export default function Contact ({colorBG, colorText, colorDynamic}) {
     const initStyle = {
         backgoundColor: colorBG,
         color: colorText,
-        margin: 'auto',
-        padding: '75px 20px'
+        margin: '40px auto',
+        paddingTop: '75px'
     }
     const style = {
         color: colorText
@@ -61,7 +61,6 @@ export default function Contact ({colorBG, colorText, colorDynamic}) {
                             <FaLinkedin style={{fontSize: "30px", verticalAlign:"middle", marginRight:"10px", backgroundColor:"transparent"}}/>
                             <a onMouseOver={hover} onMouseOut={notHover} href="https://www.facebook.com/mehedi.primes/" target="_blank" rel="noreferrer" style={style}>Facebook</a>
                         </div>
-                        
                     </div>
                 </div>
 

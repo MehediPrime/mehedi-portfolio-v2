@@ -6,8 +6,8 @@ export default function About ({colorBG, colorText, colorDynamic}) {
     const initStyle = {
         backgoundColor: colorBG,
         color: colorText,
-        margin: 'auto',
-        padding: '75px 20px'
+        margin: '40px auto',
+        paddingTop: '75px'
     }
 
     return(
@@ -16,7 +16,6 @@ export default function About ({colorBG, colorText, colorDynamic}) {
             <div className="aboutContainer">
                 <div className="leftPart">
                     <div className="leftPicture" >
-
                     </div>
                 </div>
                 <div className="rightPart">
