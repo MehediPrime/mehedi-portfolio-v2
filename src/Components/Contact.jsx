@@ -7,11 +7,13 @@ export default function Contact ({colorBG, colorText, colorDynamic}) {
     const initStyle = {
         backgoundColor: colorBG,
         color: colorText,
-        margin: '40px auto',
-        paddingTop: '75px'
+        marginTop: '40px',
+        paddingTop: '75px',
+        paddingBottom: '100px'
     }
     const style = {
-        color: colorText
+        color: colorText,
+        backgoundColor: colorBG
     }
     const hover = (event) => {
         event.target.style.backgroundColor= colorDynamic;
@@ -19,7 +21,7 @@ export default function Contact ({colorBG, colorText, colorDynamic}) {
         event.target.style.color = colorBG;
     }
     const notHover = (event) => {
-        event.target.style.backgroundColor= colorBG;
+        event.target.style.backgroundColor= "transparent";
         event.target.style.color = colorText;
     }
 
@@ -51,7 +53,7 @@ export default function Contact ({colorBG, colorText, colorDynamic}) {
                     <div className="socialLinks">    
                         <div className="socialLink" >
                             <FaFacebookSquare style={{fontSize: "30px", verticalAlign:"middle", marginRight:"10px", backgroundColor:"transparent"}}/>
-                            <a onMouseOver={hover} onMouseOut={notHover} href="https://www.facebook.com/mehedi.primes/" target="_blank" rel="noreferrer" style={style}>Facebook</a>
+                            <a style={style} onMouseOver={hover} onMouseOut={notHover} href="https://www.facebook.com/mehedi.primes/" target="_blank" rel="noreferrer" style={style}>Facebook</a>
                         </div>
                         <div className="socialLink" >
                             <FaGithubSquare style={{fontSize: "30px", verticalAlign:"middle", marginRight:"10px", backgroundColor:"transparent"}}/>
