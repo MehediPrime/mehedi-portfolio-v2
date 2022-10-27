@@ -40,7 +40,7 @@
 .right .cardOne{
     position:absolute;
     height: 440px;
-    width: 300px;
+    width: 200px;
     margin-left: -100px;
     border-radius: 10px;
     animation-name: rotateLeft;
@@ -55,7 +55,7 @@
 .right .cardTwo{
     position:absolute;
     height: 500px;
-    width: 300px;
+    width: 200px;
     border: none;
     border-radius: 10px;
     animation-name: rotateRight;

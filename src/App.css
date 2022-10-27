@@ -1,5 +1,4 @@
 *{
-  margin: 0px;
   font-family: 'Mulish', sans-serif;
   scroll-behavior: smooth;
 }
@@ -11,13 +10,13 @@
   text-transform: uppercase;
 }
 #About, #Education, #Home, #Portfolio, #Skill, #Contact{
-  width: 1180px;
+  width: 80%;
   margin: auto;
 }
 
 @media screen and (max-width:1200px) {
   #About, #Education, #Home, #Portfolio, #Skill, #Contact{
-    width: 100vw;
-    padding: 53px;
+    width: 75%;
+    padding: 50px;
   }
 }

@@ -13,7 +13,7 @@ export default function Home ({colorBG, colorText, colorDynamic}) {
     }
     const style = {
         color:colorText,
-        backgroundColor: colorBG
+        backgroundColor: colorBG,
     }
     const styleBGDynamic = {
         backgroundColor: colorDynamic

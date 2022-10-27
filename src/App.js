@@ -13,9 +13,13 @@ function App() {
   const [colorBG, setColorBG] = useState("#fff");
   const [colorText, setColorText] = useState("#303134");
   const [colorDynamic, setColorDynamic] = useState("#ff4522");
-  
+
+
+  const style={
+    backgroundColor:colorBG
+  }
   return (
-    <div className="App" style={{backgroundColor:colorBG}}>
+    <div className="App" style={style}>
       <ThemeSwitch 
         colorBG={colorBG} setColorBG={setColorBG} 
         colorText={colorText} setColorText={setColorText}
